@@ -21,7 +21,7 @@
 # role :web, %w{user1@primary.com user2@additional.com}, other_property: :other_value
 # role :db,  %w{deploy@example.com}
 
-server '52.90.237.194', user: 'deploy', roles: %w{web app db}
+server '54.236.191.90', user: 'deploy', roles: %w{web app db}
 
 
 # Configuration
