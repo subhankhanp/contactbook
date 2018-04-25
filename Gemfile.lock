@@ -1,26 +1,3 @@
-GIT
-  remote: git://github.com/capistrano/bundler.git
-  revision: cf0f0978dbda5c8403e6388c2a4d1b3bb9acf32a
-  specs:
-    capistrano-bundler (1.3.0)
-      capistrano (~> 3.1)
-      sshkit (~> 1.2)
-
-GIT
-  remote: git://github.com/capistrano/passenger.git
-  revision: 6dc408ec690d0cbe8c2e9d86c33ad4f7977dfa73
-  specs:
-    capistrano-passenger (0.2.0)
-      capistrano (~> 3.0)
-
-GIT
-  remote: git://github.com/capistrano/rvm.git
-  revision: 9cfef39cf0022839dca6b5b330dfefeb5fc363e7
-  specs:
-    capistrano-rvm (0.1.2)
-      capistrano (~> 3.0)
-      sshkit (~> 1.2)
-
 GEM
   remote: https://rubygems.org/
   specs:
