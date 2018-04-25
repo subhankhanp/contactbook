@@ -33,12 +33,12 @@ gem 'jbuilder', '~> 2.5'
 # gem 'bcrypt', '~> 3.1.7'
 
 # Use Capistrano for deployment
-# gem 'capistrano-rails', group: :development
+group :development do
   gem 'capistrano-rails'
   gem 'capistrano-rvm', github: "capistrano/rvm"
   gem 'capistrano-bundler', github: "capistrano/bundler"
-  #gem 'capistrano-passenger', github: "capistrano/passenger"
-  #gem 'capistrano-sidekiq'
+  gem 'capistrano-passenger', github: "capistrano/passenger"
+  gem 'capistrano-sidekiq'
   gem 'capistrano3-puma'
 end
 
@@ -49,7 +49,7 @@ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
-  gem 'web-console', '>= 3.3.0'
+  gem 'web-console'
   gem 'listen', '~> 3.0.5'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
@@ -57,16 +57,5 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-group :development do
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-end
-gem 'figaro'
 
-#gem 'puma'
-#group :development do
-  #gem 'capistrano'
-  #gem 'capistrano3-puma'
-  #gem 'capistrano-rails', require: false
-  #gem 'capistrano-bundler', require: false
-  #gem 'capistrano-rvm'
-#end
