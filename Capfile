@@ -34,8 +34,8 @@ install_plugin Capistrano::SCM::Git
  require "capistrano/rails/migrations"
 #require "capistrano/passenger"
  require 'capistrano/puma'
- install_plugin Capistrano::Puma
- install_plugin Capistrano::Puma::Workers
+ #install_plugin Capistrano::Puma
+ #install_plugin Capistrano::Puma::Workers
 
 # Load custom tasks from `lib/capistrano/tasks` if you have any defined
 Dir.glob("lib/capistrano/tasks/*.rake").each { |r| import r }
