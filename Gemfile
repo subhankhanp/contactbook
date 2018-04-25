@@ -34,6 +34,13 @@ gem 'jbuilder', '~> 2.5'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
+  gem 'capistrano-rails'
+  gem 'capistrano-rvm', github: "capistrano/rvm"
+  gem 'capistrano-bundler', github: "capistrano/bundler"
+  #gem 'capistrano-passenger', github: "capistrano/passenger"
+  #gem 'capistrano-sidekiq'
+  gem 'capistrano3-puma'
+end
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -50,13 +57,16 @@ group :development do
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
-gem 'figaro'
-#gem 'puma'
 group :development do
-  gem 'capistrano'
-  gem 'capistrano3-puma'
-  gem 'capistrano-rails', require: false
-  gem 'capistrano-bundler', require: false
-  gem 'capistrano-rvm'
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 end
+gem 'figaro'
+
+#gem 'puma'
+#group :development do
+  #gem 'capistrano'
+  #gem 'capistrano3-puma'
+  #gem 'capistrano-rails', require: false
+  #gem 'capistrano-bundler', require: false
+  #gem 'capistrano-rvm'
+#end
