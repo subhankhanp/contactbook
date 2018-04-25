@@ -1,5 +1,4 @@
-# config valid for current version and patch releases of Capistrano
-lock "~> 3.10.1"
+lock '3.10.1'
 
 set :application, 'contactbook'
 set :repo_url, 'git@github.com:subhankhanp/contactbook.git' # Edit this to match your repository
@@ -26,3 +25,4 @@ set :puma_workers, 0
 set :puma_worker_timeout, nil
 set :puma_init_active_record, true
 set :puma_preload_app, false
+set :rbenv_map_bins, %w(rake gem bundle ruby rails puma pumactl sidekiq sidekiqctl)
